@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require ('path')
-const utils = require('./src/utils')
+const utils = require('./utils')
 const mongoose = require('mongoose')
-const Weather = require('./models/weathermodel')
+const Weather = require('../models/weathermodel')
 const hbs = require('hbs')
 
 //wy43zmLaZoDmXDNW
@@ -70,6 +70,7 @@ app.get('/weather', (req,res)=>{
     })
 
 })
+
 let port = process.env.PORT || 3000
 app.listen(port, ()=>{
     console.log("server is listening on port 3000")
