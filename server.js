@@ -1,8 +1,8 @@
 const express = require('express')
 const path = require ('path')
-const utils = require('./utils')
+const utils = require('./src/utils')
 const mongoose = require('mongoose')
-const Weather = require('../models/weathermodel')
+const Weather = require('./models/weathermodel')
 const hbs = require('hbs')
 
 //wy43zmLaZoDmXDNW
